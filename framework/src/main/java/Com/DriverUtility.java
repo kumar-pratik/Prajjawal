@@ -60,7 +60,7 @@ public class DriverUtility {
         //urlKeys.put(OpenBrowser.USERNAME_TEXT_KEY, prop.getProperty(OpenBrowser.USERNAME_TEXT_KEY));
 
 
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
